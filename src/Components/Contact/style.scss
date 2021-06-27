@@ -1,0 +1,89 @@
+$mobile-breakpoint: 480px;
+$mobile2-breakpoint:667px;
+$mobile3-breakpoint: 736px;
+$tablet-breakpoint:768px;
+$laptop-breakpoint: 1024px;
+
+.contactContainer {
+height: 600px;
+.contactTitle{
+width: 300px;
+margin: 50px auto;
+
+@media only screen and (max-width: $mobile-breakpoint) {
+width: 200px;
+}
+}
+img{
+width: 300px;
+padding-left: 30px;
+}
+.contactWrapper {
+margin-bottom: 30px;
+display: flex;
+justify-content: space-between;
+font-size: 20px; 
+justify-content: center;
+
+@media only screen and (max-width: $mobile-breakpoint) {
+display: flex;
+flex-wrap: wrap;
+}
+
+@media only screen and (max-width: $mobile3-breakpoint) {
+display: flex;
+flex-wrap: wrap;
+bottom:0;
+width: 100%;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+	display: flex;
+	flex-wrap: wrap;
+	bottom:0;
+	justify-content: space-between;
+	padding-right: 30px; 
+	padding-left: 30px; 
+	width: 100%;
+	}
+
+.mail{
+font-family: 'Assistant';
+color:#397249;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+.linksContainer {
+padding-right:30px;
+display: flex;
+flex-direction: row;
+li{
+text-decoration: none;
+list-style: none;
+
+.me2{
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	margin-right: 50px;
+}
+
+.linkContact{
+		color:#397249;
+		font-weight: bold;
+		font-family: 'Assistant';
+		margin-top: 10px;
+		padding-right: 20px;
+		list-style: none;
+		text-decoration: none;
+		cursor: pointer;
+
+		@media only screen and (max-width: $mobile-breakpoint) {
+		padding-left: 30px;
+		}
+		}
+		}
+		}
+	}
+}

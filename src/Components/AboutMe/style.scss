@@ -1,0 +1,44 @@
+$mobile-breakpoint: 480px;
+$mobile2-breakpoint:667px;
+$mobile3-breakpoint: 736px;
+$tablet-breakpoint:768px;
+$laptop-breakpoint: 1024px;
+
+
+.AboutMe{
+    display: flex;
+    background-image: url('../../assets/backgroundImageAboutMe.png');
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+
+    @media only screen and (max-width: $tablet-breakpoint) {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    }
+
+    .me{
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin-right: 50px;
+    }
+    .description{
+        
+        color:#1B3523;
+        font-size: 18px;
+        width:40%;
+        font-family: 'Assistant';
+        font-weight: 800;
+    
+        @media only screen and (max-width: $tablet-breakpoint) {
+        width:100%;
+        text-align: center;
+        padding:20px;
+        }
+    }
+    
+}

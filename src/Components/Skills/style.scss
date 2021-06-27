@@ -1,0 +1,64 @@
+$mobile-breakpoint: 480px;
+$mobile2-breakpoint:667px;
+$mobile3-breakpoint: 736px;
+$tablet-breakpoint:768px;
+$laptop-breakpoint: 1024px;
+
+.skillsWrapper{
+    background-image: url('../../assets/Backgroundskills.png');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+    @media only screen and (max-width: $tablet-breakpoint) {
+    height: 500px;
+    }
+
+    @media only screen and (max-width: $mobile-breakpoint) {
+        height: 700px;
+        }
+
+    .skillsTitle{
+        margin:50px auto;
+        padding:20px;
+        width: 300px;
+        @media only screen and (max-width: $tablet-breakpoint) {
+            width: 200px;
+            padding:0;
+            }
+        
+            @media only screen and (max-width: $mobile-breakpoint) {
+                width: 200px;
+                padding:0;
+                }
+    }
+    
+    .skillsContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 80%;
+        margin:0 auto;
+
+        @media only screen and (max-width: $tablet-breakpoint) {
+            width:70%;
+        }
+
+        
+        img{
+            width: 240px;
+            margin:60px;
+            padding:20px;
+
+            @media only screen and (max-width: $tablet-breakpoint) {
+            width: 80px;
+            margin:10px;
+            padding:5px;
+            }
+            
+        }
+    
+    }
+}
